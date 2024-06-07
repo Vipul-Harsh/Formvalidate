@@ -1,0 +1,160 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(120deg, rgb(15, 1, 90), #f5576c 100%);
+}
+
+.container {
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.divider {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+label {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+input,
+select {
+  width: 100%;
+  height: 20px;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-bottom: 2px solid #fff;
+  border-radius: 4px;
+  color: grey;
+  
+}
+
+input::placeholder {
+  color: lightgrey;
+}
+
+input:focus,
+select:focus {
+  border-bottom-color: #8204ff;
+}
+
+.field-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: calc(100% - 30px);
+}
+
+.show-password {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  cursor: pointer;
+  color: white;
+}
+
+.phone-container {
+  display: flex;
+  
+}
+
+.phone-container select {
+  width: 35%;
+  margin-left: 0;
+}
+
+.phone-container input {
+  width: 65%;
+  
+}
+button {
+  background-color: #8204ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  
+}
+
+button:hover {
+  background-color: #5703b7;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.error{
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+    
+  }
+
+  h2 {
+    font-size: 20px; 
+  }
+
+  input,
+  select {
+    height: 30px;
+    width: 80%; 
+  }
+
+  .show-password {
+    top: 5px;
+  }
+}
